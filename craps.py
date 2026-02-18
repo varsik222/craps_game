@@ -11,9 +11,13 @@ x, y, summ = main()
 
 print(f"the summ of dice is: {x} + {y}: ", summ)
 
-if (summ == 7 or summ == 11):
+#You could write this in a more Pythonic way for readability
+#Its shorter and easier to read
+if summ in (7, 11):
     print("You won!")
-elif(summ == 2 or summ == 3 or summ == 12):
+
+#Same here
+elif summ in (2, 3, 12):
     print("Craps the casino wins!!!")
 else:
     target = summ
